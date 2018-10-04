@@ -20,7 +20,7 @@
 
 \lstinputlisting[caption=\OptimizingKeilVI (\ARMMode) ASM Output,style=customasmARM]{patterns/00_empty/1_Keil_ARM_O3.s}
 
-Адрес возврата (\ac{RA}) в ARM не сохраняется в локальном стеке, а в регистре \ac{LR}.
+Адрес возврата (\ac{RA}) в ARM сохраняется не в локальном стеке, а в регистре \ac{LR}.
 Так что инструкция \INS{BX LR} делает переход по этому адресу, и это то же самое что и вернуть управление
 в вызывающую ф-цию.
 
